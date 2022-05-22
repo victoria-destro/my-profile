@@ -1,0 +1,130 @@
+/* Colors and fonts */
+body {
+	background-color: blanchedalmond;
+	color: darksalmon;
+	font-family: Times New Roman;
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+h1, h2, h3{
+	font-family: 'Roboto', sans-serif;
+}
+h1{
+	color: rosybrown;
+	font-weight: 600;
+	font-size: 32px;
+}
+h2{
+	color: rosybrown;
+	font-weight: 600;
+	font-size: 32px;
+}
+h3{
+	color: darksalmon;
+	font-family: Times New Roman;
+	font-weight: lighter;
+	font-size: 20px;
+}
+a{
+	text-decoration: none;
+	color: lightseagreen;
+	transition: color 0.9 ease;
+}
+a:hover {
+	color: palevioletred;
+}
+
+/* Custom design with class */
+
+.container{
+	width: 700px;
+	margin: 40px auto;
+}
+
+@media (max-width: 750px){
+	.container{
+		width: 600px;
+	}
+}
+
+@media (max-width: 500px){
+	.container{
+		width: 400px;
+	}
+}
+
+.card-white{
+	background: white;
+    padding: 60px;
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.img-circle{
+	border-radius: 50%;
+}
+
+.img-borders{
+	border-radius: 1.5%;
+}
+
+.btn-pink{
+	background-color: darksalmon;
+	color: white;
+	padding:  15px 20px;
+	border-radius: 5px;
+}
+.btn-pink:hover{
+	background-color: blanchedalmond;
+	color: darksalmon;
+}
+
+.list-inline{
+	list-style: none;
+	padding-left: 0px;
+}
+.list-inline li{
+	display:  inline;
+	padding: 10px;
+}
+.list-inline i{
+	font-size: 50px;
+	color: darksalmon;
+}
+.list-inline i:hover {
+	color: rosybrown;
+}
+#introduction p {
+	margin-bottom: 40px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 40%;
+  padding: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.grow { 
+	transition: all .2s ease-in-out; 
+}
+.grow:hover { 
+    transform: scale(1.3); 
+}
